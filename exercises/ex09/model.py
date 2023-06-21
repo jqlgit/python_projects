@@ -1,7 +1,8 @@
+"""The model classes maintain the state and logic of the simulation."""
 
 from __future__ import annotations
 from random import random
-from pythonproj.visualsim import constants
+from exercises.ex09 import constants
 from math import sin, cos, pi, sqrt
 
 
@@ -53,7 +54,6 @@ class Cell:
             self.immunize()
 
     def color(self) -> str:
-        """Determines color of circles."""
         if self.is_vulnerable():
             return "gray"
         if self.is_infected():

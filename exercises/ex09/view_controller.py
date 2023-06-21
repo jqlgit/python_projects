@@ -1,6 +1,8 @@
+"""The ViewController drives the visualization of the simulation.""" 
+
 from turtle import Turtle, Screen, _Screen, done
-from pythonproj.visualsim.model import Model
-from pythonproj.visualsim import constants
+from exercises.ex09.model import Model
+from exercises.ex09 import constants
 from typing import Any
 from time import time_ns
 
@@ -15,7 +17,6 @@ class ViewController:
     model: Model
 
     def __init__(self, model: Model):
-        """Initialize the VC."""
         self.model = model
         self.screen = Screen()
         self.screen.setup(constants.VIEW_WIDTH, constants.VIEW_HEIGHT)
