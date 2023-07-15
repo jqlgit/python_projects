@@ -9,7 +9,6 @@ BOUNDS_HEIGHT: int = 400
 MAX_Y: float = BOUNDS_HEIGHT / 2
 MIN_Y: float = -MAX_Y
 VIEW_HEIGHT: int = BOUNDS_HEIGHT + 20
-"""test"""
 
 CELL_RADIUS: int = 15
 CELL_COUNT: int = 40
